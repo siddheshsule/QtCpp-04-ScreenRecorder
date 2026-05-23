@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+7add9a67e640e75ffa0fc719c4d78335 CMakeFiles/QtCpp-04-ScreenRecorder_autogen
+1d3737054c09c5b7ad1266e043392aa0 QtCpp-04-ScreenRecorder_autogen/timestamp

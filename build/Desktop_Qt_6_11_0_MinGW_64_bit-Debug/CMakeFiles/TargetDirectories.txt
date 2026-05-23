@@ -1,0 +1,9 @@
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/QtCpp-04-ScreenRecorder.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/QtCpp-04-ScreenRecorder_autogen_timestamp_deps.dir
+C:/Users/siddh/OneDrive/Documents/QtProjects/QtCpp-04-ScreenRecorder/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/QtCpp-04-ScreenRecorder_autogen.dir
