@@ -23,58 +23,91 @@ MainWindow::MainWindow(QWidget *parent)
     recordButton = new QPushButton(buttonLabel);
     recordButton->setStyleSheet("font-size: 16px; color:white; background-color: green");
     mainLayout->addWidget(recordButton);
+    setCentralWidget(centralWidget);
 
     // Record functionality
-    connect(recordButton, &QPushButton::clicked, this, [&](){
-        if(recordButton->text() == "Record") {
-            outputFilePath = QFileDialog::getSaveFileName(this, "Save Recording","","Video Files (*.mp4 *.wav)");
-            if(!outputFilePath.isEmpty()) {
-                startRecording(recordProcess, recordButton, outputFilePath, this);
-            }
-        }
-        //else {
-          //  stopRecording(recordProcess, recordButton, outputFilePath, this);
-        //}
-    });
+    connect(recordButton, &QPushButton::clicked, this, &MainWindow::toggleRecording);
 
     // Sets centralWidget as the mainWindow's central widget - if that makes sense! LMAO!
-    setCentralWidget(centralWidget);
 }
 
-void MainWindow::startRecording(QProcess &recordProcess, QPushButton *recordButton, QString &outputFilePath, QWidget *mainWindow) {
-    recordButton->setText("Stop");
-    recordButton->setStyleSheet("font-size:16px; color:white; background-color:red");
+void MainWindow::startRecording()
+{
+    outputFilePath = QFileDialog::getSaveFileName(
+        this,
+        "Save Recording",
+        "",
+        "Video Files (*.mp4)"
+        );
 
-    QString command = ffmpeg;
+    if (outputFilePath.isEmpty()) {
+        return;
+    }
+
+    QString program = ffmpeg;
 
     QStringList arguments;
-
     arguments << "-y"
               << "-f" << "gdigrab"
               << "-i" << "desktop"
               << "-f" << "dshow"
               << "-i" << "audio=Microphone Array (Realtek(R) Audio)"
               << "-c:v" << "libx264"
-              << "preset" << "ultrafast"
+              << "-preset" << "ultrafast"
               << "-c:a" << "aac"
               << "-pix_fmt" << "yuv420p"
               << outputFilePath;
 
-    recordProcess.start(command, arguments);
+    recordProcess.start(program, arguments);
 
-    if(!recordProcess.waitForStarted()) {
-        qDebug() << "Failed to start recording";
-        recordButton->setText("Record");
-        recordButton->setStyleSheet("font-size: 16px; color:white; background-color: green");
+    if (!recordProcess.waitForStarted()) {
+        QMessageBox::critical(this,
+                              "Error",
+                              "Failed to start recording.");
 
+        return;
+    }
+
+    qDebug() << "Recording started...";
+
+    recordButton->setText("Stop");
+    recordButton->setStyleSheet(
+        "font-size: 16px;"
+        "color: white;"
+        "background-color: red;"
+        );
+
+    showMinimized();
+}
+
+void MainWindow::stopRecording()
+{
+    if (recordProcess.state() == QProcess::Running) {
+        recordProcess.write("q\n");
+        recordProcess.waitForFinished();
+
+        qDebug() << "Recording stopped. Saved to " << outputFilePath;
+    }
+    recordButton->setText("Record");
+    recordButton->setStyleSheet(
+        "font-size: 16px;"
+        "color: white;"
+        "background-color: green;"
+        );
+    showNormal();
+}
+
+void MainWindow::toggleRecording() {
+    if(recordProcess.state() == QProcess::Running) {
+        stopRecording();
     } else {
-        qDebug() << "Recording Started...";
-        this->showMinimized();
+        startRecording();
     }
 }
-//void stopRecording(QProcess &recordProcess, QPushButton *recordButton, const QString &outputFilePath, QWidget *mainWindow);
-
 MainWindow::~MainWindow()
 {
+    if(recordProcess.state() == QProcess::Running) {
+        stopRecording();
+    }
     delete ui;
 }

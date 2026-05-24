@@ -7,6 +7,7 @@
 #include<QPushButton>
 #include<QProcess>
 #include<QFileDialog>
+#include<QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -34,7 +35,8 @@ private:
     QString outputFilePath;
 
 private slots:
-    void startRecording(QProcess &recordProcess, QPushButton *recordButton, QString &outputFilePath, QWidget *mainWindow);
-    //void stopRecording(QProcess &recordProcess, QPushButton *recordButton, const QString &outputFilePath, QWidget *mainWindow);
+    void startRecording();
+    void stopRecording();
+    void toggleRecording();
 };
 #endif // MAINWINDOW_H

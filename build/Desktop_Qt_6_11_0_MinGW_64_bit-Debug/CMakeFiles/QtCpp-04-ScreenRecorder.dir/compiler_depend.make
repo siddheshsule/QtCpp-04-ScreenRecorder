@@ -181,11 +181,13 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/QtCpp-04-ScreenRecorder_autogen/mocs_comp
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
@@ -193,6 +195,7 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/QtCpp-04-ScreenRecorder_autogen/mocs_comp
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -641,12 +644,14 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/main.cpp.obj: C:/Users/siddh/OneDrive/Doc
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
@@ -654,6 +659,7 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/main.cpp.obj: C:/Users/siddh/OneDrive/Doc
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -1103,6 +1109,7 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/mainwindow.cpp.obj: C:/Users/siddh/OneDri
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMenuBar \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
@@ -1111,6 +1118,7 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/mainwindow.cpp.obj: C:/Users/siddh/OneDri
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
@@ -1120,6 +1128,7 @@ CMakeFiles/QtCpp-04-ScreenRecorder.dir/mainwindow.cpp.obj: C:/Users/siddh/OneDri
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmenu.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmenubar.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
@@ -1637,6 +1646,8 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qlogging.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qmalloc.h:
 
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox:
+
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstringfwd.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qmap.h:
@@ -1941,6 +1952,8 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h:
 
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
+
 C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h:
@@ -1954,6 +1967,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unif
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc:
 
